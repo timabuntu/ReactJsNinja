@@ -1,7 +1,11 @@
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router';
 function App() {
   return (
     <div className='App'>
-      <h1 className='text-3xl'>ReactJs Ninja</h1>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </div>
   );
 }
