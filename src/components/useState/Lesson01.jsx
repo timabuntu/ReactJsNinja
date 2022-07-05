@@ -1,7 +1,10 @@
 export function Lesson01() {
   return (
-    <h2 className='font-semibold text-center uppercase'>
-      Detalhes sobre o funcionamento do useState
-    </h2>
+    <>
+      <h2 className='font-semibold text-center uppercase'>
+        Detalhes sobre o funcionamento do useState
+      </h2>
+      <main className='p-8'></main>
+    </>
   );
 }
