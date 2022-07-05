@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 export function Lesson01() {
+  const [valor, setValor] = useState();
+
   return (
     <>
       <h2 className='font-semibold text-center uppercase'>
