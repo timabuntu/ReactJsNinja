@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
 export function Lesson01() {
-  const [valor, setValor] = useState(10);
+  const [valor, setValor] = useState(() => {
+    return 0;
+  });
 
   const decremento = () => {
     setValor((oldState) => oldState - 1);
-    setValor((oldState) => oldState - 2);
   };
 
   const incremento = () => {
-    setValor((oldState) => oldState + 1);
     setValor((oldState) => oldState + 1);
   };
 
@@ -35,14 +35,6 @@ export function Lesson01() {
             onClick={incremento}
           >
             Incremento +
-          </button>
-          <button
-            className='p-4 bg-gray-700 rounded text-cyan-300'
-            onClick={() => {
-              setValor((oldState) => oldState + 100);
-            }}
-          >
-            Incrementa 100
           </button>
         </div>
         <p className='block p-4 mt-4 text-center text-gray-100 bg-purple-700 rounded'>
