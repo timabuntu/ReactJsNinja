@@ -5,7 +5,7 @@ export function Lesson01() {
 
   const decremento = () => {
     setValor((oldState) => oldState - 1);
-    setValor((oldState) => oldState - 1);
+    setValor((oldState) => oldState - 2);
   };
 
   const incremento = () => {
