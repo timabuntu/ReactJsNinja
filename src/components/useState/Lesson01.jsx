@@ -36,6 +36,14 @@ export function Lesson01() {
           >
             Incremento +
           </button>
+          <button
+            className='p-4 bg-gray-700 rounded text-cyan-300'
+            onClick={() => {
+              setValor((oldState) => oldState + 100);
+            }}
+          >
+            Incrementa 100
+          </button>
         </div>
         <p className='block p-4 mt-4 text-center text-gray-100 bg-purple-700 rounded'>
           Valor: {valor}
