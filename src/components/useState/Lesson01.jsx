@@ -4,11 +4,13 @@ export function Lesson01() {
   const [valor, setValor] = useState(10);
 
   const decremento = () => {
-    setValor(valor - 1);
+    setValor((oldState) => oldState - 1);
+    setValor((oldState) => oldState - 1);
   };
 
   const incremento = () => {
-    setValor(valor + 1);
+    setValor((oldState) => oldState + 1);
+    setValor((oldState) => oldState + 1);
   };
 
   return (
