@@ -4,11 +4,13 @@ export function Lesson01() {
   const [valor, setValor] = useState(10);
 
   const decremento = () => {
-    return console.log('Decrementou');
+    setValor(valor - 1);
   };
+
   const incremento = () => {
-    return console.log('Incrementou');
+    setValor(valor + 1);
   };
+
   return (
     <>
       <h2 className='text-xl font-semibold text-center text-blue-800 uppercase'>
