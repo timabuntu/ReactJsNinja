@@ -4,11 +4,15 @@ export function Lesson01() {
   const [valor, setValor] = useState(10);
 
   const decremento = () => {
-    return console.log('Decrementou');
+    setValor((oldState) => oldState - 1);
+    setValor((oldState) => oldState - 2);
   };
+
   const incremento = () => {
-    return console.log('Incrementou');
+    setValor((oldState) => oldState + 1);
+    setValor((oldState) => oldState + 1);
   };
+
   return (
     <>
       <h2 className='text-xl font-semibold text-center text-blue-800 uppercase'>
@@ -31,6 +35,14 @@ export function Lesson01() {
             onClick={incremento}
           >
             Incremento +
+          </button>
+          <button
+            className='p-4 bg-gray-700 rounded text-cyan-300'
+            onClick={() => {
+              setValor((oldState) => oldState + 100);
+            }}
+          >
+            Incrementa 100
           </button>
         </div>
         <p className='block p-4 mt-4 text-center text-gray-100 bg-purple-700 rounded'>
