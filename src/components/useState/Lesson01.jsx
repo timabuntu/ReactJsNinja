@@ -15,11 +15,11 @@ export function Lesson01() {
 
   return (
     <>
-      <h2 className='text-xl font-semibold text-center text-blue-800 uppercase'>
+      <h2 className='text-xl font-semibold text-center text-blue-400 uppercase'>
         Detalhes sobre o funcionamento do useState
       </h2>
       <main className='p-8'>
-        <h3 className='text-xl font-semibold text-emerald-600'>
+        <h3 className='text-xl font-semibold text-emerald-300'>
           Incremento e Decremento
         </h3>
 
